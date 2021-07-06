@@ -1,0 +1,112 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{ /*resete de css*/
+    margin: 0; /*margem zero*/
+    padding: 0; /*espaçamento entre elementos zero*/
+    box-sizing: border-box; /* garante que o tamanho de cada elemento ira caber dentro da caixa que vc estipulou*/
+}
+
+/*elementos base*/
+body{
+    background: var(--preto); /*fundo do nosso site*/
+    font-family: 'Arial', Times, serif; /*fonte que sera usada no site */
+    color: white;/*muda a cor de tudo que esta dentro do body*/
+}
+
+.logo{ /*aqui voce cria propriedades de estilo para
+    a classe logo definida la no html no elemento h2*/
+    margin-left: 5px;
+    color: var(--vermelho); /*cor*/
+    font-family: 'Arial Black';/*estilo da fonte*/
+    font-size: 40px;/*tamanho da fonte*/
+}
+
+header nav a{ /*aqui voce cria propriedades de estilo
+    para o elemento (a) definido la no html dentro do
+    elemento (nav)*/
+    text-decoration: none;/*retira aquelas linhas sublinhadas
+    abaixo de cada menu*/
+    color: #aaa;/*altera a cor de exibição do menu*/
+    margin-right: 10px;/*cria uma distancia a direita entre os itens do menu*/
+}
+
+header nav a:hover{/*novamente dentro da tag (a) quando 
+    o mouse for passado sobre o menu ele ira sofrer
+    alteração*/
+    color: #fff;/*muda a cor do menu ao passar o mouse*/
+}
+
+.container{
+    display: flex;/*é uma maneira de alinhar os elementos
+    em tela, tem a tendencia a jogar tudo para a linha por padrao*/
+    align-items: center;
+    justify-content: space-between;/*distancia entre os elementos
+    ou seja, distancia entre a tag (h2) e a tag (nav)*/
+}
+
+/*filme principal*/
+
+.filme-principal{/*edita propriedades da classe filme principal*/
+    font-size: 16px;/*altera o tamanho da fonte da classe filme principal*/
+    background: url('/Netflix/img/lucifer.jpg');/*coloca uma imagem como fundo*/
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column; /*alinhar em coluna ao inves de linha*/
+    justify-content: center; /*alinhados no centro da coluna*/
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{/*edita propriedades da classe descricao*/
+    margin-bottom: 40px; /*cria um espacamento entre a descrição e os botoes*/
+    margin-top: 20px;
+}
+
+.filme-principal .titulo{ /*edita as propriedades da classe titulo*/
+    margin-top: 15%;
+    font-size: 40px;/*muda o tamanho da fonte da classe titulo*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;/*primeiro valor serve para cima 
+    e para baixo e o segundo valor para esquerda e direita*/
+    margin-right: 15px; /*cria uma margem a direita para separar os botoes*/
+    font-size: 12px;/*altera o tamanho da fonte do botoes*/
+    
+    cursor: pointer; /*muda o cursor quando selecionado, ajuda quem esta vendo 
+    a identificar que é um botao clicavel*/
+    transition: .3s ease all;
+}
+
+.botao a{
+    color: white;
+    text-decoration: none;
+}
+
+.botao i{
+    margin-right: 8px; /*cria uma margem a direita entre os botoes e o texto*/
+}
+
+.filme-principal .container{
+    width: 40%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}

@@ -1,0 +1,50 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{ /*resete de css*/
+    margin: 0; /*margem zero*/
+    padding: 0; /*espaçamento entre elementos zero*/
+    box-sizing: border-box; /* garante que o tamanho de cada elemento ira caber dentro da caixa que vc estipulou*/
+}
+
+body{
+
+    background: var(--preto); /*fundo do nosso site*/
+    font-family: 'Arial', Times, serif; /*fonte que sera usada no site */
+    color: white;/*muda a cor de tudo que esta dentro do body*/
+}
+
+
+
+.trailer .video{
+    width: 600px;
+    height: 400px;
+    
+}
+
+
+.container{
+    display: flex;/*é uma maneira de alinhar os elementos
+    em tela, tem a tendencia a jogar tudo para a linha por padrao*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer .relevante{
+    
+    color: lawngreen;
+    
+}
+
+
+.trailer .top{
+    
+    margin-top: 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.trailer .descricao{
+    margin-top: 20%;
+}

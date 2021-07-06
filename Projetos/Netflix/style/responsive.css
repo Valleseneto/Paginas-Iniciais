@@ -1,0 +1,17 @@
+@media screen and (max-width: 700px){ /*cria formatações condicionais de acordo com o tamanho da tela*/
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:1000px) { /*largura minima de 1000px*/
+    .descricao {
+        width: 40%;
+    }
+}
