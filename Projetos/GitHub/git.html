@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e GitHub</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Como Utilizar o Git e o GitHub</h1>
+    <ol>
+        <li>Passo
+        <ol>
+            <li>Faça o download e instale a ferramenta do git <a href="https://gitforwindows.org/" target="_blank">AQUI.</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Agora crie uma pasta local em seu computador, preferencialmente na raiz do disco local (C:).</li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Abra a pasta que acabou de criar, clique com o botão direito do mouse, escolha a opção Git Bash Here e ira abrir o terminal, conforme imagem abaixo:</li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git.png', 600, 600);">Imagem</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Caso queira criar uma pasta pode fazer isso através do terminal, utilizando este  <abbr title="mkdir seguido de “(ASPAS DUPLAS) NOME DO ARQUIVO”">COMANDO.</abbr></li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git1.png', 600, 600);">Exemplo</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Agora você pode realizar seus projetos e colocar tudo dentro dessa pasta que criou, em seguida iremos seguir para inicializar o git e enviar os arquivos para o github.</li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Agora precisamos inicializar a estrutura do git em nosso repositório local, esse comando deve ser feito sempre na mesma pasta, ou seja, se você criou uma pasta no disco local chamada teste, deve sempre iniciar por aqui.</li>
+            <li>Com o terminal aberto devemos digitar este <abbr title="git init">COMANDO.</abbr></li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git2.png', 600, 600);">Exemplo</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Agora após incluirmos nossos arquivos na pasta criada precisamos adiciona-lo ao git, isso sera feito através do <abbr title="git add *">COMANDO</abbr>.</li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Agora podemos utilizar o <abbr title="git status">COMANDO</abbr> para nos mostrar o que foi feito, ou seja, ele ira te dizer quais arquivos ainda precisam ser commitados ou entao mostrar os que foram adicionados e estão prontos para serem enviados ao github.</li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git3.png', 600, 600);">Exemplo1</a></li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git4.png', 600, 600);">Exemplo2</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Agora iremos realizar o nosso commit, basta escrever o seguinte <abbr title="git commit -m">COMANDO</abbr> seguido de um texto para descrevê-lo.</li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git5.png', 600, 600);">Exemplo</a></li>
+            <li>Se tudo deu certo nos passos acima vai aparecer uma mensagem conforme a imagem abaixo:</li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git6.png', 600, 600);">Exemplo</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Se esta for a primeira vez que você esta iniciando um repositório siga os passos abaixo:
+            <ol>
+                <li>Acesse o seu github e crie um novo repositório juntamente com um arquivo readme</li>
+                <li>Agora va na opção code e copie o link para o seu repositório</li>
+                <li>Volte la para o prompt de comando do Git e utilize o <abbr title="git remote add origin">COMANDO,</abbr> seguido do link que acabou de copiar.</li>
+                <li><a href="#" onclick="javascript:abrirJanela('imagens/git7.png', 600, 600);">Exemplo</a></li>
+            </ol>
+            </li> <br>
+            <li>Se você quiser por algum motivo alterar o seu repositório atual, siga estes passos abaixo:
+            <ol>
+                <li>Após você ter criado o novo repositório e copiado o link do mesmo, basta digitar este <abbr title="git remote set-url origin">COMANDO</abbr>, seguido do novo repositório.</li>
+                <li><a href="#" onclick="javascript:abrirJanela('imagens/git8.png', 600, 600);">Exemplo</a></li>
+            </ol>
+            </li>
+        </ol>
+        </li><br>
+        <li>Passo
+        <ol>
+            <li>Para conferir qual repositório esta configurado use este <abbr title="git remote -v">COMANDO</abbr>.</li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git9.png', 600, 600);">Exemplo</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Agora basta digitar o <abbr title="git push origin master">COMANDO.</abbr></li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git10.png', 600, 600);">Exemplo</a></li>
+            <li>Caso de tudo certo recebera uma mensagem conforme imagem abaixo:</li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git13.png', 600, 600);">Exemplo</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo (Siga este procedimento somente se tiver algum erro ao realizar o PUSH.
+        <ol>
+            <li>Caso tenha algum erro parecido com este da imagem abaixo, realize o próximo passo</li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git11.png', 600, 600);">Exemplo</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Digite o seguinte <abbr title="git pull --rebase">COMANDO.</abbr> </li>
+            <li><a href="#" onclick="javascript:abrirJanela('imagens/git12.png', 600, 600);">Exemplo</a></li>
+        </ol>
+        </li>   <br>
+        <li>Passo
+        <ol>
+            <li>Se receber algo como a mensagem acima, basta repetir o passo 12.</li>
+        </ol>
+        </li>
+    </ol>
+
+    <h2>Comandos adicionais</h2>
+        
+        <p><strong>rmdir</strong> + o nome da pasta deleta a pasta e todo seu conteudo.</p> 
+        <p><strong>clear</strong> limpa a tela do prompt.</p>    
+        <p><strong>ls</strong> exibe o conteudo dentro da pasta, menos os arquivos ocultos.</p>   
+        
+</body>
+</html>
