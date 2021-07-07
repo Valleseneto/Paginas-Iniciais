@@ -1,0 +1,277 @@
+@charset "UTF-8";
+@font-face { /*chama um arquivo para uso de fontes salvas na mesma pasta de trabalho*/
+    font-family: 'FonteLogo'; /*nome qualquer para identificar a fonte*/
+    src: url(../_fonts/bubblegum-sans-regular.otf);/*caminho onde a fonte se encontra*/
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');/*fonte externa do site google.com/fonts*/
+/*Exemplos de formatação
+
+<sub> = resultado de subscrito
+<sup> = resultado de sobrescrito
+<code> = é uma TAG semantica, tudo que estiver dentro dela é um codigo
+<pre> = tudo aqui dentro ficara como pre-formatado, ela é utilizada junto com a
+tag <code> para deixar o codigo escrito conforme foi digitado*/
+
+body{
+    /*background-image: url(nome da imagem);colocar uma imagem de plano de fundo*/
+    background-color: #dddddd; /* cor do plano de fundo */
+    color: rgba(0, 0, 0, 1); /*cor da fonte, pode-se usar tambem a cor em hexadecimal,
+    através dos valores de rgb e ainda usar o rgba onde o "a"(alpha) significa transparencia,
+    sendo o 0 mais transparente e o maior nivel 1 que significa totalmente visivel*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto; /*cima, direita, baixo, esquerda*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 10px 10px;
+}
+
+div#tv-radio video#filme {
+    width: 350px;
+    height: 300px;
+    padding-top: 0px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #606060;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 950px;
+    top: 70px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+figure.foto-legenda{
+    position: relative; /* lugar relativo ao codigo html*/
+    border: 8px solid white; /*borda (tamanho da borda, estilo da borda, cor da borda)*/
+    box-shadow: 1px 1px 4px black; /*sombra*/
+}
+
+figure.foto-legenda img{
+    width: 100%; /*largura*/
+    height: 100%; /*altura*/
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0; /*opacidade de 0 a 1 */
+    position: absolute; /* tem uma posição absoluta dentro do container, que no caso
+    é a borda branca*/
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* cria um box dentro da borda*/
+    transition: opacity 1; /*leva um segundo para exibir ou esconder o conteudo*/
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1; /*opacidade de 0 a 1 */
+}
+
+/* Formatação do menu */
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;/*faz com que os marcadores ao lado das opções do menu desapareçam*/
+    text-transform: uppercase;/*deixa as letras do menu todas maiusculas*/
+    position: absolute; /*pode mexer o bloco dentro do site inteiro*/
+    top: -20px;
+    left: 500px;
+}
+
+nav#menu li{
+    display: inline-block; /*serve para deixar os menus lado a lado*/
+    background-color: lightgray;/*cor de fundo*/
+    padding: 10px; /*espaçamento dentro do objeto*/
+    margin: 2px; /*espaço que tem entre os botoes, margem de fora*/
+    transition: background-color 1s; /*tempo que a função hover ficara ativa,
+    tempo para a cor voltar ao normal depois de passar o mouse*/
+}
+
+nav#menu li:hover {/* cria efeito ao passar o mouse por cima*/
+    background-color: #606060;
+}
+
+nav#menu h1{
+    display: none; /*esconde a escrita menu principal dentro de h1*/
+}
+
+nav#menu a{
+    color: black;
+    text-decoration: none;
+
+}
+
+nav#menu a:hover{
+    color: white; /*cor da fonte branca ao passar o mouse em cima do menu*/
+}
+
+section#corpo {
+    display: block; /*exibe o conteudo em bloco*/
+    width: 500px; /*largura do conteudo*/
+    float: left; /*flutuar do lado esquerdo, para usar o float deve estar configurado os objetos como bloco*/
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+
+article#noticia-principal h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 10px 0px 10px 10px;
+    margin: 10px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo';
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: #606060;
+}
+
+.direita {
+    text-align: right;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px; /*remove os espaços entre as celulas*/
+    margin-left: auto; /*deixa automatico a margin a esquerda da tabela*/
+    margin-right: auto; /*deixa automatico a margin a direita da tabela*/
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px; /*cria um espaço interno nas celulas*/
+    text-align: center;
+    vertical-align: middle; /*alinha o conteudo no meio das celulas*/
+}
+
+table#tabelaspec td.ce{
+    color: white;
+    background-color: #606060;
+    vertical-align: top; /*a classe sobrepoe o que foi estipulado anteriormente*/
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;/*exibe o conteudo em bloco*/
+    width: 350px; /*largura do conteudo*/
+    float: right;/*flutuar do lado direito*/
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1{
+    font-family: 'FonteLogo';
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;  
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color:#ffffff;
+    padding: 5px;
+}
+
+video#filme1 {
+    width: 394px;
+    height: 222px;
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+}
+
+video#filme2 {
+    width: 349px;
+    height: 178px;
+    position: relative;
+
+}
+
+footer#rodape {   
+    clear: both; /*limpa as configurações dos dois lados*/
+    border-top: 1px solid #606060;  
+}
+
+footer#rodape p{
+    text-align: center;
+}

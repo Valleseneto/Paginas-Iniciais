@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Javascript</title>
+    <script>
+        var quebrada = false; //variavel global pois esta fora da função, serve como uma base para uma maquina de estado
+        function mudaLampada(tipo) { //cria uma função dentro de script com um nome qualquer, na chamda da função
+            //coloca o nome do parametro
+            if (tipo == 1) {
+                arquivo = "_imagens/lampada-acesa.jpg";
+            } //Aqui é feito uma verificação do parametro, se tipo ==(igual) a 1 ele acende a lampada
+            if (tipo == 2) {
+               arquivo = "_imagens/lampada-apagada.jpg";
+            }
+            if (tipo == 3) {
+                arquivo = "_imagens/lampada-quebrada.jpg";
+            }
+            if (!quebrada) { //se NÃO quebrada ele recebe o arquivo. 
+                document.getElementById("luz").src = arquivo;
+                if (tipo == 3) {
+                quebrada = true; //aqui vai alterar o valor da variavel quebrada para verdadeiro, o que fara com que ela
+                //fique quebrada mesmo.
+           }
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)"> <!--onclick serve para quando
+    clicar com o mouse na imagem ele chama a função acendeLampada--> <!--no onmousemove quando passa o mouse por cima da imagem
+    ele chama a função acendeLampada-->
+</body>
+</html>
